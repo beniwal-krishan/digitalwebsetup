@@ -1,5 +1,5 @@
-if(process.env.NODE_ENV === 'production'){
+//if(process.env.NODE_ENV === 'production'){
 
-    module.exports = require('./prod-database');
+    mongodb+srv://beniwalkk:Userkk123@clusterkk.7ecvb.mongodb.net/<dbname>?retryWrites=true&w=majority;
 
 }

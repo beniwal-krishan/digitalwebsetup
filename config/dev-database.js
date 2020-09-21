@@ -1,5 +1,5 @@
 module.exports = {
 
-    mongoDbUrl: 'mongodb://localhost/cms'
+    mongoDbUrl: "mongodb+srv://clusterkk.7ecvb.mongodb.net/<cms>" --username beniwalkk
 
 };
