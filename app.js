@@ -8,7 +8,7 @@ const methodOverride = require('method-override');
 const upload = require('express-fileupload');
 const session = require('express-session');
 const flash = require('connect-flash');
-const {mongoDbUrl} = require('./config/database');
+const {mongoDbUrl} = require('../config/database');
 const passport = require('passport');
 
 
@@ -103,10 +103,12 @@ app.use('/admin/posts', posts);
 app.use('/admin/categories', categories);
 app.use('/admin/comments', comments);
 
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 4500;
+}
 
-const port = process.env.PORT || 4500;
-
-app.listen(port, ()=>{
+app.listen(port, function()=>{
 
 console.log(`listening on port 4500`);
 
